@@ -21,16 +21,17 @@ e a nota.
 alert("Iremos calcular sua média bimestral...")
 let student = prompt("Qual o nome do(a) aluno(a)?")
 let n1 = prompt("Qual é a primeira nota da prova?")
-let n2 = prompt('Qual é a segunda nota da prova?')
-let n3 = prompt('Qual é a terceira nota da prova?')
+let n2 = prompt("Qual é a segunda nota da prova?")
+let n3 = prompt("Qual é a terceira nota da prova?")
 
-let average = (Number(n1) + Number(n2) + Number(n3)) /3
+let average = (Number(n1) + Number(n2) + Number(n3)) / 3
 let result = average > 6
-average = average.toFixed(2) 
+average = average.toFixed(2)
 
-
-if (result)  {
-    alert("Parabéns, " + student + "! A sua média foi de: " + average)
+if (result) {
+  alert("Parabéns, " + student + "! A sua média foi de: " + average)
+} else if (average < 3) {
+  alert("Reprovado!")
 } else {
-    alert("Estude para a recuperação!  Sua média foi de: " + average)
+  alert("Estude para a recuperação!  Sua média foi de: " + average)
 }
