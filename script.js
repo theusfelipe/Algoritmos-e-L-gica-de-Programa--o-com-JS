@@ -27,8 +27,10 @@ let n3 = prompt('Qual é a terceira nota da prova?')
 let average = (Number(n1) + Number(n2) + Number(n3)) /3
 let result = average > 6
 
+
+
 if (result)  {
-    alert("Parabéns " + student + "! A sua média foi de: ", result)
+    alert("Parabéns, " + student + "! A sua média foi de: " + average)
 } else {
-    alert("Você não atingiu a média requirida! Tente outra vez :(")
+    alert("Estude para a recuperação!  Sua média foi de: " + average)
 }
