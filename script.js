@@ -29,9 +29,9 @@ let result = average > 6
 average = average.toFixed(2)
 
 if (result) {
-  alert("Parabéns, " + student + "! A sua média foi de: " + average)
+alert("Parabéns, " + student + "! A sua média foi de: " + average)
 } else if (average < 3) {
-  alert("Reprovado!")
+alert("Reprovado!")
 } else {
-  alert("Estude para a recuperação!  Sua média foi de: " + average)
+alert("Estude para a recuperação!  Sua média foi de: " + average)
 }
