@@ -26,7 +26,7 @@ let n3 = prompt('Qual é a terceira nota da prova?')
 
 let average = (Number(n1) + Number(n2) + Number(n3)) /3
 let result = average > 6
-
+average = average.toFixed(2) 
 
 
 if (result)  {
