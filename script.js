@@ -6,5 +6,6 @@ Após capturar os 10 items, imprima-os, separando por vírgula.
 
 
 for (let item = 0; item < 10; item++) {
-
+  alert(item)
 }
+
