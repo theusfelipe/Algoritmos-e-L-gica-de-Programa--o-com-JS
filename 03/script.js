@@ -8,7 +8,7 @@ E para cada operação, mostrar um alerta para o resultado.
 
 let firstNumber = prompt("Digite o primeiro número: ")
 let secondNumber= prompt("Digite o segundo número: ")
-
+folder
 
 firstNumber = Number(firstNumber)
 secondNumber = Number(secondNumber)
