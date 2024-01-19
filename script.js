@@ -21,5 +21,5 @@ const randomNumber = Math.round(Math.random() * 10)
 const match = Number(result) == randomNumber
 
 while (true) {
-  console.log("alo")
+  
 } 
