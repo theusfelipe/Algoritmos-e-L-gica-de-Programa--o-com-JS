@@ -38,29 +38,20 @@ Olá usuário! Digite o número da opção desejada
 `)
 )
 
-
-
-while(option != 3){
-
+while (option != 3) {
   let items = []
-  
+
   if (option == 1) {
     items[0] = prompt("Digite o nome do item")
-  } 
-  
-  
-  else if (option == 2) {
+  } else if (option == 2) {
     if (items.length === 0) {
       alert("Não existem itens cadastrados!")
     } else {
       alert(items)
     }
-  } 
-  
-  
-  else {
+  } else {
     alert("Tchauzinho!")
   }
-  
+
   console.log(option, items)
 }
