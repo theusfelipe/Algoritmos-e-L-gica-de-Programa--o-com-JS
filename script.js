@@ -29,7 +29,7 @@
 
 let option
 let items = []
-let index = 0
+
 
 while (option != 3) {
   option = Number(
@@ -44,8 +44,9 @@ while (option != 3) {
   )
 
   if (option == 1) {
-    items[index] = prompt("Digite o nome do item")
-    index++
+    let item = prompt("Digite o nome do item")
+    items.push(item)  
+    
   } 
   
   else if (option == 2) {
