@@ -27,29 +27,39 @@
   2- Lista de itens
 */
 
-let option = Number(
-  prompt(`
-Olá usuário! Digite o número da opção desejada
-
-1. Cadastrar um item na lista
-2. Mostrar itens cadastrados
-3. Sair do programa
-
-`)
-)
+let option
+let items = []
+let index = 0
 
 while (option != 3) {
-  let items = []
+  option = Number(
+    prompt(`
+  Olá usuário! Digite o número da opção desejada
+  
+  1. Cadastrar um item na lista
+  2. Mostrar itens cadastrados
+  3. Sair do programa
+  
+  `)
+  )
 
   if (option == 1) {
-    items[0] = prompt("Digite o nome do item")
-  } else if (option == 2) {
+    items[index] = prompt("Digite o nome do item")
+    index++
+  } 
+  
+  else if (option == 2) {
+
     if (items.length === 0) {
       alert("Não existem itens cadastrados!")
-    } else {
+    } 
+
+    else {
       alert(items)
     }
-  } else {
+  } 
+
+  else {
     alert("Tchauzinho!")
   }
 
