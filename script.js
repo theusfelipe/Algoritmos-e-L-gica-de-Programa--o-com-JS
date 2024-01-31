@@ -16,3 +16,51 @@
   Caso o usuário digite 3, a aplicação deverá ser encerrada.
 
 */
+
+/*
+  Dados de entrada do usuário
+  1- Número desejado
+  2- item da lista
+
+  Variáveis
+  1- Opção digitada
+  2- Lista de itens
+*/
+
+let option = Number(
+  prompt(`
+Olá usuário! Digite o número da opção desejada
+
+1. Cadastrar um item na lista
+2. Mostrar itens cadastrados
+3. Sair do programa
+
+`)
+)
+
+
+
+while(option != 3){
+
+  let items = []
+  
+  if (option == 1) {
+    items[0] = prompt("Digite o nome do item")
+  } 
+  
+  
+  else if (option == 2) {
+    if (items.length === 0) {
+      alert("Não existem itens cadastrados!")
+    } else {
+      alert(items)
+    }
+  } 
+  
+  
+  else {
+    alert("Tchauzinho!")
+  }
+  
+  console.log(option, items)
+}
