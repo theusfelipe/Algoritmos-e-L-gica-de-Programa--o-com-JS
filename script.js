@@ -43,6 +43,26 @@ while (option != 3) {
   `)
   )
 
+    switch(option) {
+      case 1:
+        //sequencia de código
+        break;
+      case 2: 
+        //sequencia de código
+        break;
+      default;
+      //caminho padrão quando não é um dos casos acima
+    }
+
+
+
+
+
+
+
+
+
+
   if (option == 1) {
     let item = prompt("Digite o nome do item")
     items.push(item)  
