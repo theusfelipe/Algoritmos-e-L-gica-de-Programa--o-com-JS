@@ -30,7 +30,6 @@
 let option
 let items = []
 
-
 while (option != 3) {
   option = Number(
     prompt(`
@@ -43,46 +42,22 @@ while (option != 3) {
   `)
   )
 
-    switch(option) {
-      case 1:
-        //sequencia de código
-        break;
-      case 2: 
-        //sequencia de código
-        break;
-      default;
-      //caminho padrão quando não é um dos casos acima
-    }
+  switch (option) {
+    case 1:
+      let item = prompt("Digite o nome do item")
+      items.push(item)
+      break
+    case 2:
+      if (items.length === 0) {
+        alert("Não existem itens cadastrados!")
+      } else {
+        alert(items)
+      }
+      break
+    case 3:
+      alert("Tchauzinho!")
 
-
-
-
-
-
-
-
-
-
-  if (option == 1) {
-    let item = prompt("Digite o nome do item")
-    items.push(item)  
-    
-  } 
-  
-  else if (option == 2) {
-
-    if (items.length === 0) {
-      alert("Não existem itens cadastrados!")
-    } 
-
-    else {
-      alert(items)
-    }
-  } 
-
-  else {
-    alert("Tchauzinho!")
+    default:
+      alert("Opção inválida, Tente novamente!")
   }
-
-  console.log(option, items)
 }
