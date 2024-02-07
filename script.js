@@ -56,7 +56,7 @@ while (option != 3) {
       break
     case 3:
       alert("Tchauzinho!")
-
+      break
     default:
       alert("Opção inválida, Tente novamente!")
   }
