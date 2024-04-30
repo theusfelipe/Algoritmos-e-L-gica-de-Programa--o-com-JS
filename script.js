@@ -33,9 +33,10 @@ function exibirMensagemAprovacao (aluno) {
     const aprovado = verificarAprovacao (media);
     
     if(aprovado) {
-        alert(`Parabéns, ${aluno.nome}! Você foi aprovado.`);
+        alert(`A média do(a) aluno(a), ${aluno.nome} é: ${media}\n 
+        Parabéns,${aluno.nome}!  Você foi aprovado(a) no concurso.`);
     } else {
-        alert(`Você não foi aprovado ${aluno.nome}, tente outra vez!`);
+        alert(`Não foi dessa vez ${aluno.nome}!, tente novamente!`);
     }
     
 }
