@@ -1,61 +1,32 @@
-/*
-Dada uma lista de pacientes, descubra o IMC  de cada paciente e imprima
-
-"Paciente X possui o IMC de: Y"
-
-Onde X é o nome do paciente e Y é o IMC desse paciente
-
-Crie uma função para fazer o cálculo de IMC
-*/
-
-//    Peso / (altura * altura) */
-
-const patients = [
-  {
-    name: "Luiz",
-    age: 24,
-    weight: 78,
-    height: 182,
+alert("Olá, aqui quem fala é a IA do concurso Gerando Líderes!");
+alert("Iremos calcular a sua média, para ver se foi aprovado ou não!");
+let name = prompt("Digite o nome do Aluno: ");
+let notaProva1 = prompt("Digite a nota da primeira prova: ");
+let notaProva2 = prompt("Digite a nota da segunda prova: ");
+let average = (notaProva1 + notaProva2) / 2 >= 7;
+let result = average > 7;
+let listStudents = [
+  {nome:'Matheus', 
+   notaProva1: 8.5, 
+   notaProva2:6.5
   },
   {
-    name: "Matheus",
-    age: 24,
-    weight: 79,
-    height: 183,
+    nome:"Camila",
+    notaProva1:9.5,
+    notaProva2:8.5,
   },
   {
-    name: "Camila",
-    age: 29,
-    weight: 64,
-    height: 169,
+    nome:"David",
+    notaProva1:9.5,
+    notaProva2:8.5,
   },
-];
-// ${(patients.weight / (patients.height / 100) ** 2).toFixed(2)}
+]
 
-function IMC(weight, height) {
-  return (weight / ((height / 100) ** 2)).toFixed(2);
-}
 
-function printPatientIMC(patient) {
-  return `
-    Paciente ${patient.name} possui o IMC de
-    ${IMC(patient.weight, patient.height)}
-  
-  `;
-}
 
-for (let patient of patients) {
-  let IMCmessage = printPatientIMC(patient);
-  alert(IMCmessage);
-}
-
-//criação, depois o javascript irá guardar em memória
-// function liquidificador(fruta1, fruta2) {
-//   const suco = fruta1 + fruta2;
-//   return suco;
+// function average ((listStudents.notaProva1) + (listStudents.notaProva2) /2 >= 7) {
+//   CONTINUAR DAQUI...
 // }
-
-// //Execução
-// let MeuSuco = liquidificador("maça" ,  "banana")
-
-// alert(MeuSuco)
+if (result) {
+    alert(""),
+    }
