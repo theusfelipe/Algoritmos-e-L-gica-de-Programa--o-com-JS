@@ -1,32 +1,43 @@
-alert("Olá, aqui quem fala é a IA do concurso Gerando Líderes!");
-alert("Iremos calcular a sua média, para ver se foi aprovado ou não!");
-let name = prompt("Digite o nome do Aluno: ");
-let notaProva1 = prompt("Digite a nota da primeira prova: ");
-let notaProva2 = prompt("Digite a nota da segunda prova: ");
-let average = (notaProva1 + notaProva2) / 2 >= 7;
-let result = average > 7;
-let listStudents = [
+
+const listStudents = [
   {nome:'Matheus', 
-   notaProva1: 8.5, 
-   notaProva2:6.5
+   nota1: 8.5, 
+   nota2:6.5
   },
   {
     nome:"Camila",
-    notaProva1:9.5,
-    notaProva2:8.5,
+    nota1:9.5,
+    nota2:8.5,
   },
   {
     nome:"David",
-    notaProva1:9.5,
-    notaProva2:8.5,
+    nota1:9.5,
+    nota2:8.5,
   },
-]
+];
 
+function calculateMedia(nota1,nota2) {
+    return (nota1 + nota2) /2;
+}
 
+function verificarAprovacao(media) {
+    if (media >= 7) {
+        return true;
+    } else {
+        return false;
+    }  
+}
 
-// function average ((listStudents.notaProva1) + (listStudents.notaProva2) /2 >= 7) {
-//   CONTINUAR DAQUI...
-// }
-if (result) {
-    alert(""),
+function exibirMensagemAprovacao (aluno) {
+    const media = calculateMedia(aluno.nota1, aluno.nota2);
+    const aprovado = verificarAprovacao (media);
+    
+    if(aprovado) {
+        alert(`Parabéns, ${aluno.nome}! Você foi aprovado.`);
+    } else {
+        alert(`Você não foi aprovado ${aluno.nome}, tente outra vez!`);
     }
+    
+}
+
+listStudents.forEach(exibirMensagemAprovacao);
