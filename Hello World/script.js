@@ -1,3 +1,3 @@
 let world = "Hello World!";
 
-alert(let)
+alert(world)
