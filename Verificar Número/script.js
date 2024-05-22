@@ -5,4 +5,6 @@ Se for, exiba a mensagem  "É um número" caso contrário, exiba a mensagem
 */
 
 
-
+function VerificarNumero () {
+    return
+}
