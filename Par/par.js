@@ -12,8 +12,8 @@ function isEven(number) {
 
 
 // Verificação do tipo e se é par
-if (isNumber(minhaVariavel)) {
-    if (isEven(minhaVariavel)) {
+if (isNumber(minhaVariavelPar)) {
+    if (isEven(minhaVariavelPar)) {
         console.log("É um número par");
     } else {
         console.log("Não é um número par");
