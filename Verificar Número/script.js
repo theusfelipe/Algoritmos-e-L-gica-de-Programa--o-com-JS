@@ -4,7 +4,11 @@ Se for, exiba a mensagem  "É um número" caso contrário, exiba a mensagem
 "não é um número"  Exemplo: Typeof 
 */
 
+let minhaVariavel = prompt("Escreva algo: ");
 
-function VerificarNumero () {
-    return
+if (typeof minhaVariavel === 'number') {
+    alert("É um número!")
+} else {
+    alert("Não é número!")
 }
+   
